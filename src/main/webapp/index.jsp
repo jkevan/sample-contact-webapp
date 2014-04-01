@@ -2,7 +2,7 @@
 <%@page language="java" contentType="text/html; charset=ISO-8859-1"
 		pageEncoding="ISO-8859-1"%>
 
-<esi:include src="$(PROVIDER{default})sites/mySite/home.html">
+<esi:include src="$(PROVIDER{default})$(defaultTemplate)">
 	<esi:replace fragment="col1">
 		<a href="info.jsp">get more info on this app</a>
 
