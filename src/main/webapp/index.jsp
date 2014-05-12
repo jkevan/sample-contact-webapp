@@ -2,7 +2,8 @@
 <%@page language="java" contentType="text/html; charset=ISO-8859-1"
 		pageEncoding="ISO-8859-1"%>
 
-
+<esi:include src="$(PROVIDER{default})/cms/render/default/en/sites/mySite/home.html">
+	<esi:replace fragment="col1">
 		<a href="info.jsp">get more info on this app</a>
 
 		<form action="result.jsp" method="POST">
@@ -16,3 +17,5 @@
 			</label>
 			<input type="submit" value="Submit">
 		</form>
+	</esi:replace>
+</esi:include>
